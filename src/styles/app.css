@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  min-height: 500px;
+  font-family: 'Oswald', sans-serif;
+}
+.main {
+  flex: 1;
+} 
+.app > * {
+  width: 100%;
+}
