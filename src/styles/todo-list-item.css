@@ -1,0 +1,16 @@
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.todo-list-item__label {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.todo-list-item__label.hot {
+  font-weight: 700;
+  color: tomato;
+}
+.todo-list-item__label.done {
+  text-decoration: line-through;
+}

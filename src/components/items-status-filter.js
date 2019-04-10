@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ItemsStatusFilter = () => {
-  return (
-    <div class="buttons has-addons">
-      <span class="button is-link is-selected">All</span>
-      <span class="button is-danger">Active</span>
-      <span class="button is-success">Done</span>
-    </div>
-  )
-};
-
-export default ItemsStatusFilter;
+export default class ItemsStatusFilter extends React.Component {
+  render() {
+    return (
+      <div className="buttons has-addons">
+        <span className="button is-link is-selected">All</span>
+        <span className="button is-danger">Active</span>
+        <span className="button is-success">Done</span>
+      </div>
+    )
+  }
+}
