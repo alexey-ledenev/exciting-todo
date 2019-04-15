@@ -11,6 +11,9 @@ export default class NewTaskForm extends React.Component {
     this.onFormSubmit = (e) => {
       e.preventDefault();
       this.props.onTaskAdd(this.state.taskLabel);
+      this.setState({
+        taskLabel: ''
+      });
     };
   };
   state = {
@@ -21,7 +24,13 @@ export default class NewTaskForm extends React.Component {
       <form className="new-task-form" onSubmit={ this.onFormSubmit }>
         <div className="columns">
           <div className="column">
-            <input className="input" type="text" placeholder="New task ..." onBlur={this.onNewTaskChange} />
+            <input 
+              className="input" 
+              type="text" 
+              placeholder="New task ..." 
+              onChange={this.onNewTaskChange} 
+              value={this.state.taskLabel}  
+            />
           </div>
           <div className="column is-narrow">
             <button className="button is-black is-outlined"><i className="fas fa-plus"></i></button>
