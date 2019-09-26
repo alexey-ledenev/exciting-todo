@@ -1,3 +1,1 @@
-### Exciting Todo-List Application maded by React
-
-https://rayzstar4eg.github.io/exciting-todo/.
+### Exciting Todo-List Application made with React
